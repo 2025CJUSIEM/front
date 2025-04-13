@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+/* 전체 페이지 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.siem-stealer-page {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* 헤더 스타일 */
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 15px 30px;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  height: 40px; /* 원하는 높이로 조정 */
+  width: auto; /* 비율 유지 */
+  object-fit: contain; /* 이미지 비율 유지하며 컨테이너에 맞추기 */
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+}
+
+.login-button {
+  background-color: #000;
   color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+/* 메인 컨텐츠 스타일 */
+.main-content {
+  flex: 1;
+  background-color: #ff7f5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.security-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.icon-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+.security-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* 한글 텍스트 스타일 */
+.korean-text-container {
+  text-align: center;
+  margin: 20px 0;
+  color: #000;
+}
+
+.main-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.additional-text {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .main-nav ul {
+    margin: 15px 0;
+  }
+  
+  .icon-container {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .security-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .main-title {
+    font-size: 22px;
+  }
+  
+  .sub-title {
+    font-size: 28px;
+  }
+  
+  .additional-text {
+    font-size: 20px;
   }
 }

@@ -73,7 +73,7 @@ const SiemStealerPage = () => {
       <header className="header">
         <div className="logo">
           <img 
-            src="https://i.ibb.co/gFmgm9jM/siem-stealer-image-1.jpg" 
+            src="https://i.ibb.co/sdjgwvvv/siem-stealer.jpg" 
             alt="Siem Stealer Logo" 
             className="logo-image"
           />

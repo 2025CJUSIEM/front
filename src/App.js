@@ -92,24 +92,35 @@ const SiemStealerPage = () => {
 
       {/* 메인 섹션 */}
       <main className="main-content">
-        <div className="security-icons-container">
-          <div className="icon-row">
-            <LockIcon />
-            <ShieldIcon />
-            <MenuIcon />
+        <div className="content-container">
+          {/* 로그인 부분 */}
+          <div className="login-section">
+            <h2>로그인</h2>
+            <input type="text" placeholder="아이디" />
+            <input type="password" placeholder="비밀번호" />
+            <button>로그인</button>
           </div>
-          
-          <div className="korean-text-container">
-            <h1 className="main-title">최고의 보안 인프라</h1>
-            <h2 className="sub-title">Siem Stealer에서</h2>
-            <h3 className="additional-text">쉽고 간편하게</h3>
-          </div>
-          
-          <div className="icon-row">
-            <KeyIcon />
-            <MobileSecurityIcon />
-            <EyeIcon />
-            <TwoFactorIcon />
+
+          {/* 배너 및 보안 아이콘 */}
+          <div className="security-icons-container">
+            <div className="icon-row">
+              <LockIcon />
+              <ShieldIcon />
+              <MenuIcon />
+            </div>
+            
+            <div className="korean-text-container">
+              <h1 className="main-title">최고의 보안 인프라</h1>
+              <h2 className="sub-title">Siem Stealer에서</h2>
+              <h3 className="additional-text">쉽고 간편하게</h3>
+            </div>
+            
+            <div className="icon-row">
+              <KeyIcon />
+              <MobileSecurityIcon />
+              <EyeIcon />
+              <TwoFactorIcon />
+            </div>
           </div>
         </div>
       </main>

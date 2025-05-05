@@ -111,6 +111,50 @@ body {
   height: 20px;
 }
 
+/* 로그인 섹션 */
+.login-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 230px;
+  text-align: center;
+  position: absolute; /* 위치 고정 */
+  left: 0%; 
+  margin-left: 50px; /* 로그인 박스의 절반 크기만큼 왼쪽으로 이동 (max-width / 2) */
+  top: 20%; /* 세로 가운데 정렬 */
+  transform: translateY(-50%); /* 정확한 세로 가운데 정렬 */
+}
+
+.login-section h2 {
+  margin-bottom: 20px;
+}
+
+.login-section input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-section button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #ff7f5c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-section button:hover {
+  background-color: #ff5a36;
+}
+
 /* 한글 텍스트 스타일 */
 .korean-text-container {
   text-align: center;
@@ -131,8 +175,8 @@ body {
 }
 
 .additional-text {
-  font-size: 24px;
-  font-weight: normal;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 /* 반응형 스타일 */

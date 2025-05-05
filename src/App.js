@@ -80,10 +80,9 @@ const SiemStealerPage = () => {
         </div>
         <nav className="main-nav">
           <ul>
-            <li onClick={() => setActiveMenu('company')}>회사 소개</li>
-            <li onClick={() => setActiveMenu('notice')}>공지사항</li>
-            <li onClick={() => setActiveMenu('customer')}>고객센터</li>
-            <li onClick={() => setActiveMenu('faq')}>자주 묻는 질문</li>
+            <li onClick={() => setActiveMenu('notice')}>사내공지</li>
+            <li onClick={() => setActiveMenu('resource')}>자료실</li>
+            <li onClick={() => setActiveMenu('employee information')}>사원정보</li>
           </ul>
         </nav>
         <div className="login-button" onClick={() => setActiveMenu('login')}>
